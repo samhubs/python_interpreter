@@ -67,7 +67,7 @@ def largest_factor(n):
     >>> largest_factor(13) # factor is 1 since 13 is prime
     1
     """
-    for i in reversed(range(1, n//2)):
+    for i in reversed(range(1, n//2+1)):
         if n % i == 0:
             return i
     return 1
